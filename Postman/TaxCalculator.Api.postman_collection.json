@@ -1,0 +1,55 @@
+{
+	"info": {
+		"_postman_id": "9f82aefa-f5d8-4757-9e9e-c950fec8bb77",
+		"name": "TaxCalculator.Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "422106"
+	},
+	"item": [
+		{
+			"name": "CalTax",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "ahmad.aghamohammadi@gmail.com",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "HENNGECHALLENGE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"City\": \"Gothenburg\",\r\n    \"Year\": 2013,\r\n    \"VehicleLicensePlate\": \"PRV-001\",\r\n    \"Dates\": [\r\n        \"2013-01-14T21:00:00\",\r\n        \"2013-01-15T21:00:00\",\r\n        \"2013-02-07T06:23:27\",\r\n        \"2013-02-07T15:27:00\",\r\n        \"2013-02-08T06:27:00\",\r\n        \"2013-02-08T06:20:27\",\r\n        \"2013-02-08T14:35:00\",\r\n        \"2013-02-08T15:29:00\",\r\n        \"2013-02-08T15:47:00\",\r\n        \"2013-02-08T16:01:00\",\r\n        \"2013-02-08T16:48:00\",\r\n        \"2013-02-08T17:49:00\",\r\n        \"2013-02-08T18:29:00\",\r\n        \"2013-02-08T18:35:00\",\r\n        \"2013-03-26T14:25:00\",\r\n        \"2013-03-28T14:07:27\"\r\n    ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44367/api/tax/cal-tax",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44367",
+					"path": [
+						"api",
+						"tax",
+						"cal-tax"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

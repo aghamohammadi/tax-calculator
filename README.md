@@ -86,3 +86,15 @@ A single charge rule applies in Gothenburg. Under this rule, a vehicle that pass
 Just as you finished coding, your manager shows up and tells you that the same application should be used in other cities with different tax rules. These tax rules need to be handled as content outside the application because different content editors for different cities will be in charge of keeping the parameters up to date.
 
 Move the parameters used by the application to an outside data store of your own choice to be read during runtime by the application.
+
+
+
+
+
+# Steps to follow for execution
+
+**Method 1:** Add the database located in the DB folder to SQL Server and run the program quickly and without issues.
+
+**Method 2:** Open the entire project by clicking on the .sln file and set the TaxCalculator.Api project as the startup project. Then, in the Visual Studio console, set the Default project to TaxCalculator.EntityBase and run the `update-database` command to create the database. After that, you can run either the API or the tests.
+
+**Attachment:** A Postman file for executing the API using Postman has been added in the Postman folder.
